@@ -16,3 +16,17 @@ img {
   display: block;
   max-width: 100%;
 }
+
+button {
+  padding: 10px;
+  width: 80px;
+  text-transform: uppercase;
+  transition: box-shadow linear 250ms;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+}
+
+button:hover {
+  box-shadow: 2px 4px 3px #1b0303;
+}

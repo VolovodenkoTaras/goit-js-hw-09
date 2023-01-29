@@ -18,8 +18,9 @@ img {
 }
 
 button {
+  font-size: 15px;
   padding: 10px;
-  width: 80px;
+  min-width: 80px;
   text-transform: uppercase;
   transition: box-shadow linear 250ms;
   cursor: pointer;
@@ -29,6 +30,12 @@ button {
 
 button:hover {
   box-shadow: 2px 4px 3px #1b0303;
+}
+
+#datetime-picker {
+  font-size: 15px;
+  padding: 10px;
+  text-transform: uppercase;
 }
 
 .timer {

@@ -59,7 +59,10 @@ function onClickTimer() {
             refs.timerHours.textContent = `${hours}`;
             refs.timerMinutes.textContent = `${minutes}`;
             refs.timerSeconds.textContent = `${seconds}`;
-        } else { clearInterval(setTimerId) }
+        } else {
+            clearInterval(setTimerId);
+            refs.inputCalendar.removeAttribute('disabled');
+        }
     }, 1000);
     refs.startBtn.disabled = true;
     refs.inputCalendar.disabled = true;

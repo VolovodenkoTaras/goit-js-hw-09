@@ -1,6 +1,6 @@
 const refs = {
-    startBtn: document.querySelector('[data-start]'),
-    stopBtn: document.querySelector('[data-stop]'),
+    startBtn: document.querySelector('button[data-start]'),
+    stopBtn: document.querySelector('button[data-stop]'),
 };
 
 refs.startBtn.addEventListener('click', onSwitcherStart);
@@ -10,12 +10,12 @@ let setId = null;
 
 function onSwitcherStart() {
     refs.startBtn.setAttribute('disabled', true);
-    refs.stopBtn.removeAttribute('disabled', true);
+    refs.stopBtn.removeAttribute('disabled');
     setId = setInterval(() => { document.body.style.backgroundColor = `${getRandomHexColor()}` }, 1000);
 }
 
 function onSwitcherStop() {
-    refs.startBtn.removeAttribute('disabled', true);
+    refs.startBtn.removeAttribute('disabled');
     refs.stopBtn.setAttribute('disabled', true);
     clearInterval(setId);
 }

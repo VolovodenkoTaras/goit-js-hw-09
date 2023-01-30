@@ -4,9 +4,6 @@ import Notiflix from 'notiflix';
 
 require('flatpickr/dist/themes/material_orange.css');
 
-let setTimerId = null;
-let timeToDate = null;
-
 const refs = {
     inputCalendar: document.querySelector('input[type="text"]'),
     startBtn: document.querySelector('button[data-start]'),
@@ -15,6 +12,9 @@ const refs = {
     timerMinutes: document.querySelector('[data-minutes]'),
     timerSeconds: document.querySelector('[data-seconds]'),
 };
+
+let setTimerId = null;
+let timeToDate = null;
 
 refs.startBtn.disabled = true;
 
